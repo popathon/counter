@@ -7,9 +7,37 @@
 </head>
 <body>
 
+  <h1 id="title">DEADLINE IN:</h1>
   <div class="your-clock"></div>
 		
   <script src="/flipclock/compiled/flipclock.js"></script>
   <script src="script.js"></script>
+
+  <style>
+  body {
+    background-image: url("bg.svg");
+    background-repeat: no-repeat;
+  }
+  #title {
+    position:absolute;
+    margin-top: -100px;
+    width:500px;
+    height:200px;
+    z-index:15;
+    top:50%;
+    left:45%;
+    font-family: "Helvetica", Arial;
+    color: #111;
+  }
+  .your-clock{
+    position:absolute;
+    width:500px;
+    height:200px;
+    z-index:15;
+    top:50%;
+    left:45%;
+    margin:0px 0 0 -150px;
+}
+  </style>
 </body>
 </html>
